@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Learning and Collaboration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <link rel="icon" href="https://assets.readitforward.com/wp-content/uploads/2017/01/BrunoniaBarry.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+
+            background-size: cover;
+            background-position: center;
+            font-family: sans serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .navbar-header img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        body h1,
+        h2 {
+            font-size: 40px;
+            color: black;
+            margin-top: 110px;
+            font-family: new time roman;
+        }
+
+        p {
+            font-size: 17px;
+            color: black;
+        }
+        .stuteach{
+            display: flex;
+            margin-top: 00px;
+           
+          
+            }
+            .stuteach div{
+                margin: 60px 10px 10px 20px;
+          
+            }
+            .stuteach button{
+                padding: 20px;
+            }
+        .row_style {
+            margin-top: 20px;
+
+        }
+
+        .row {
+            margin-right: 05%;
+            margin-left: 15px;
+        }
+
+        @media screen and (max-width: 650px) {
+
+            .col-4,
+            form-group input {
+                width: 100%;
+            }
+        }
+
+
+
+
+        .form-group input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #00008B;
+            color: #FFF;
+            font-size: 18px;
+            border-radius: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            cursor: pointer;
+            background: #1E90FF;
+            color: #000;
+        }
+
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 468px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        navbar-footer {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="https://assets.readitforward.com/wp-content/uploads/2017/01/BrunoniaBarry.jpg" alt="logo" />
+                <a class="navbar-brand">Learning and collaboration</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2> Create Account</h2>
+        
+        <a href="login.html" class="btn btn-info pull-right">Already have an account?<br>Login</a>
+        <h3> I am a...</h3>
+        <div class="stuteach">
+            
+        <div class="student">
+           
+        <form method="get" action="studReg.html">
+            <button class="btn stuteach"><i class="fa fa-mortar-board"></i> Student</button>
+
+        </form>
+    </div>
+    <div class="Teacher">
+        <form method="get" action="teachReg.html">
+            <button class="btn stuteach"><i class="fa fa-group"></i> Teacher</button>
+        </form>
+        
+    </div></div>
+    
+        <br><br>
+        <h3>Student Registration...</h3>
+        <div class=" row row_style">
+
+            <div class="col-4">
+
+                <div class="form-group">
+
+
+                    <p><span class="glyphicon glyphicon-user"></span>Username:</p>
+                    <input type="text" class="form-control form-group" name="name" id="name" placeholder="User Name"
+                        autofocus required>
+
+                    <p><span class="glyphicon glyphicon-education"></span>USN:</p>
+                    <input type="text" class="form-control form-group" name="usn" id="usn" placeholder="USN" required>
+
+
+                    <p><span class="glyphicon glyphicon-envelope"></span>email id:</p>
+                    <input type="email" class="form-control form-group" name="email" id="email" placeholder="email id"
+                        required>
+
+                    <p><span class="glyphicon glyphicon-phone"></span>Contact number:</p>
+                    <input type="tel" class="form-control form-group" name="phone" id="phone"
+                        placeholder="Contact number" maxlength="10" pattern="[0-9]{10}" maxlength="10"
+                        title="Enter a valid 10 digit number [0-9]" required>
+
+                    <p><span class="glyphicon glyphicon-book"></span>Subject:</p>
+                    <div id="subjects" class="form-group">
+                        <input type="text" class="form-control" list="subjectCodes" placeholder="Enter subject code"
+                            name="subjects[]" autocomplete="off" required><br>
+                    </div>
+
+                    <button onclick="appendSubjects();" class="btn btn-warning pull-right"> +Add Subject</button>
+                    <br><br><br>
+                    <form action="/login" method="post">
+                        <input onclick="submitForm()" id="myBtn" type="submit" value="Create Account"> </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-bottom">
+        <div class="container">
+            <div class="navbar-footer">
+                <p> Copyright &copy Learning and collaboration. All Rights Reserved | Contact us:+91 90000 00000.</p>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <script>
+
+
+        window.onload = initOptions();
+
+        var subjectCount = 1;
+
+        function appendSubjects() {
+            subjectCount++;
+            var d = document.createElement('div'); // is a node
+            d.setAttribute("id", subjectCount);
+            d.setAttribute("style", "display:inline-block;margin-right:3px;");
+            d.innerHTML =
+                '<input type="text" list="subjectCodes" style="display: inline-block" class="form-control" placeholder="Enter subject name" name="subjects[]" autocomplete="off">'
+                + '<button style="display:inline-block;height:20px;font-size:10px"  id="a' + subjectCount + '" class=" btn-danger" onclick="detachS(event)"> X </button><br>';
+            document.getElementById("subjects").appendChild(d);
+        }
+
+
+        function detachS(event) {
+            document.getElementById(event.target.id).parentElement.remove();
+        }
+
+
+
+        function submitForm() {
+
+            var tempArray = document.getElementsByName("subjects[]");
+
+            console.log(tempArray);
+            var subjectsList = []
+            for (var f of tempArray) {
+                if (f != "" || f != null) {
+                    subjectsList.push({ 'id': f.value });
+                }
+            }
+
+
+            if (subjectsList.length != 0) {
+                console.log(subjectsList);
+
+                var formData = {
+                    "name": document.getElementById("name").value,
+                    "usn": document.getElementById("usn").value,
+                    "email": document.getElementById("email").value,
+                    "phone": document.getElementById("phone").value,
+                    "subjectList": subjectsList
+                }
+
+                console.log(formData);
+
+                $.ajax({
+                    async: false,
+                    type: "POST",
+                    contentType: "application/json",
+                    dataType: "json",
+                    data: JSON.stringify(formData),
+                    url: "/student/register",
+                    success: function (s) {
+
+                        alert(s.message);
+                        console.log(s);
+                    }
+                });
+
+            } else {
+                console.log(subjectsList);
+                console.log("error" + subjectsList);
+
+            }
+
+        }
+
+
+
+        function initOptions() {
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "/all/teacher/subject/list",
+                success: function (s) {
+
+                    console.log(s);
+
+                    var str = '';
+                    subjectCodes = s;
+                    for (var i = 0; i < s.length; ++i) {
+                        console.log(s[i].id);
+                        str += '<option value="' + s[i].id + '" />';
+                        console.log(str);
+                    }
+
+                    var options = document.getElementById("subjectCodes");
+                    options.innerHTML = str;
+
+                }
+            });
+
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
