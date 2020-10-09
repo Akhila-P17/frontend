@@ -64,8 +64,11 @@ public class TeacherDashboardController {
 	    if (request.isUserInRole("ROLE_ADMIN")) {
 		    redirectView.setUrl("/admin.html");
 		    return redirectView;
-	    }else {
-	    	redirectView.setUrl("/dashboard.html");
+	    }else if(request.isUserInRole("ROLE_TEACHER")) {
+	    	 redirectView.setUrl("/teach_dashboard.html");
+	    	 return redirectView;
+	    }else  {
+	    	redirectView.setUrl("/stud_dashboard.html");
 		    return redirectView;
 	    }
 	}
